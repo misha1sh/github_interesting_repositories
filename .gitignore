@@ -1,0 +1,45 @@
+# Secrets
+.github_token
+
+# Collected / raw data (large files)
+1_1_collect_top_repos/data/
+1_2_collect_api/readmes/
+1_2_collect_api/collect_log.txt
+1_2_collect_api/repo_stats.csv
+1_2_collect_api/github_repos_100plus_stars.csv
+2_big_query/
+3_star_model_train/*.csv
+3_star_model_train/processed/
+
+# Nested git repo (managed separately)
+1_1_collect_top_repos/filter_tool/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Node / Frontend
+node_modules/
+.svelte-kit/
+.output/
+build/
+.vercel
+.netlify
+.wrangler
+
+# Logs
+*.log
+
+# IDE / Cursor
+.cursor/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example

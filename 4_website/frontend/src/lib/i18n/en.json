@@ -1,0 +1,89 @@
+{
+  "header": {
+    "title": "GitHub Repos by Interest",
+    "running": "Running...",
+    "done": "✓ Done — {count} results"
+  },
+  "sections": {
+    "parameters": "Recommendation setup",
+    "liveProgress": "Live Progress",
+    "recommendations": "Recommendations"
+  },
+  "error": {
+    "label": "Error"
+  },
+  "form": {
+    "username": "GitHub Username",
+    "usernamePlaceholder": "e.g. torvalds",
+    "usernameRequired": "GitHub username is required",
+    "model": "Recommendation method",
+    "modelNn": "Neural network",
+    "modelSimple": "Tags only",
+    "topK": "Number of results:",
+    "clusteringAlgorithm": "Grouping method",
+    "clusteringKMeans": "K-Means",
+    "clusteringAgglomerative": "Agglomerative",
+    "clusteringGmm": "Gaussian Mixture (GMM)",
+    "clusteringDbscan": "DBSCAN",
+    "interestClusters": "Interest groups:",
+    "clustersAuto": "Auto",
+    "options": "Profile inputs",
+    "includeForked": "Use forks",
+    "includeForkedDesc": "Add forked starred repos and the upstream projects they came from",
+    "includeOwn": "Use your repositories",
+    "includeOwnDesc": "Add repositories from your profile; missing tags are inferred by the language model",
+    "recommending": "Recommending...",
+    "findRepos": "Find repositories"
+  },
+  "progress": {
+    "empty": "Progress will appear here once you start a recommendation.",
+    "running": "Running",
+    "complete": "Complete",
+    "showLog": "Show full log ({count} lines)",
+    "hideLog": "Hide full log ({count} lines)",
+    "stages": {
+      "fetch": "Fetching repositories",
+      "enrich": "LLM tag enrichment",
+      "embed": "Computing embeddings",
+      "profile": "Building interest profile",
+      "cluster": "Clustering interests",
+      "score": "Generating recommendations",
+      "done": "Complete"
+    }
+  },
+  "results": {
+    "empty": {
+      "noResults": "No results met the score threshold.",
+      "waiting": "Results will stream in here once the recommendation runs."
+    },
+    "tabs": {
+      "recommended": "⭐ Recommended",
+      "clusters": "◆ Clusters of Interest"
+    },
+    "recommended": {
+      "computing": "Computing best recommendations...",
+      "noneFound": "No recommendations found above threshold.",
+      "topN": "Top {count} repos by score — combined from all clusters and global profile, deduplicated.",
+      "stillComputing": "Still computing..."
+    },
+    "clusters": {
+      "computing": "Clustering your interests...",
+      "noData": "No cluster data received (simple model may not produce clusters).",
+      "hiddenInfo": "Repos with score < 0.90 are hidden. Cluster headers always show.",
+      "clusterHeader": "Cluster {id} / {total}",
+      "shown": "{count} shown",
+      "hiddenBelow": "{count} below 0.90 hidden",
+      "yourRepos": "Your repos in this cluster:",
+      "noneAboveThreshold": "No repos above 0.90 in this cluster.",
+      "moreStreaming": "More clusters streaming..."
+    }
+  },
+  "log": {
+    "startingFor": "Starting recommendation for @{username}...",
+    "requestFailed": "Request failed: {msg}",
+    "noStream": "No response stream",
+    "doneWithError": "Done with error: {error}",
+    "complete": "Complete — {count} recommendations found.",
+    "connectionError": "Connection error: {error}"
+  }
+}

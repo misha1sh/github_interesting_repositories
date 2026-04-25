@@ -1,0 +1,4 @@
+flask>=3.0
+flask-cors>=4.0
+pytest>=8.0
+pytest-flask>=1.3

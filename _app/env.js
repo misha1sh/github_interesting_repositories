@@ -1,0 +1,1 @@
+export const env={"PUBLIC_API_BASE":"https://158.160.4.48.nip.io"}
